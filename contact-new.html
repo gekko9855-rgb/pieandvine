@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us | Pie + Vine & Vine + Yard</title>
+    <meta name="description" content="Get in touch with Pie + Vine. Visit us in Ashland, OR or contact us for reservations.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Muli:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav">
+                <div class="site-logo">
+                    <a href="index-new.html">
+                        <img src="https://images.pexels.com/photos/941869/pexels-photo-941869.jpeg?auto=compress&cs=tinysrgb&w=200&h=60&fit=crop" alt="Pie + Vine Logo">
+                    </a>
+                </div>
+
+                <button type="button" class="nav-toggle-btn" aria-controls="SiteHeaderMobilePanel" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="nav-toggle-btn__line"></span>
+                    <span class="nav-toggle-btn__line"></span>
+                    <span class="nav-toggle-btn__line"></span>
+                </button>
+
+                <ul class="site-nav-menu">
+                    <li><a href="index-new.html" class="site-nav-link">Home</a></li>
+                    <li><a href="menus-new.html" class="site-nav-link">Menus</a></li>
+                    <li><a href="our-story-new.html" class="site-nav-link">Our Story</a></li>
+                    <li><a href="contact-new.html" class="site-nav-link active">Contact</a></li>
+                    <li><a href="order-now-new.html" class="btn">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="hero__content">
+            <h1 class="fade-in">Contact Us</h1>
+            <p class="fade-in">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h2>Get In Touch</h2>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-item__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-item__content">
+                            <h3>Visit Us</h3>
+                            <p>358 East Main St.<br>Ashland, OR 97520</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-item__icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info-item__content">
+                            <h3>Call Us</h3>
+                            <p><a href="tel:541-488-5493">541-488-5493</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-item__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-item__content">
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:info@pieandvine.co">info@pieandvine.co</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-item__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-info-item__content">
+                            <h3>Hours</h3>
+                            <p>Mon-Thu: 11:30am - 9pm<br>
+                            Fri-Sat: 11:30am - 10pm<br>
+                            Sunday: 11:30am - 9pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in">
+                    <h2>Send Us a Message</h2>
+
+                    <div class="form-success">
+                        <i class="fas fa-check-circle"></i> Thank you for your message! We'll get back to you soon.
+                    </div>
+
+                    <div class="form-error">
+                        <i class="fas fa-exclamation-circle"></i> Please correct the errors in the form.
+                    </div>
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option value="">Select a subject</option>
+                                <option value="reservation">Reservation</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="event">Private Event</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-map fade-in"></div>
+        </div>
+    </section>
+
+    <section class="social-section">
+        <div class="container">
+            <h2 class="fade-in">Follow Us</h2>
+            <ul class="social-links-large">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <div class="social-links-large__icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <span class="social-links-large__name">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <div class="social-links-large__icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span class="social-links-large__name">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <div class="social-links-large__icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <span class="social-links-large__name">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Pie + Vine & Vine + Yard</h3>
+                    <p>Main Street patio & bright dining room specializing in Italian pastas & pizza.</p>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index-new.html">Home</a></p>
+                    <p><a href="menus-new.html">Menus</a></p>
+                    <p><a href="our-story-new.html">Our Story</a></p>
+                    <p><a href="contact-new.html">Contact</a></p>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 358 East Main St.<br>Ashland, OR 97520</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:541-488-5493">541-488-5493</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@pieandvine.co">info@pieandvine.co</a></p>
+                </div>
+
+                <div class="footer__section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11:30am - 9pm</p>
+                    <p>Friday - Saturday: 11:30am - 10pm</p>
+                    <p>Sunday: 11:30am - 9pm</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Pie + Vine & Vine + Yard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

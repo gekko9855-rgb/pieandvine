@@ -1,0 +1,300 @@
+.home-hero {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.9), rgba(44, 24, 16, 0.9)),
+    url('https://images.pexels.com/photos/1260968/pexels-photo-1260968.jpeg?auto=compress&cs=tinysrgb&w=1920');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero__content {
+  text-align: center;
+  color: var(--color-white);
+  max-width: 900px;
+  padding: var(--spacing-xl);
+}
+
+.home-hero__title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-white);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1s ease;
+}
+
+.home-hero__subtitle {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-light);
+  animation: fadeInUp 1.2s ease;
+}
+
+.home-hero__buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1.4s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.features {
+  background-color: var(--color-light);
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.feature-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+}
+
+.feature-card__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--color-white);
+}
+
+.feature-card__title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-card__text {
+  color: var(--color-gray);
+  line-height: 1.8;
+}
+
+.about-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xxl);
+  align-items: center;
+}
+
+.about-preview__image {
+  width: 100%;
+  height: 500px;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
+
+.about-preview__content h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.about-preview__content p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
+.menu-preview {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.95), rgba(44, 24, 16, 0.95)),
+    url('https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1920');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing-xxl) 0;
+}
+
+.menu-preview h2 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.menu-preview p {
+  color: var(--color-light);
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.gallery-section {
+  background-color: var(--color-light);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  height: 300px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  display: flex;
+  align-items: flex-end;
+  padding: var(--spacing-md);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-item__overlay {
+  opacity: 1;
+}
+
+.gallery-item__title {
+  color: var(--color-white);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.testimonial-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  font-size: 4rem;
+  color: var(--color-accent);
+  opacity: 0.3;
+  font-family: Georgia, serif;
+}
+
+.testimonial-card__text {
+  font-style: italic;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
+.testimonial-card__author {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing-xxl) 0;
+}
+
+.cta-section h2 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.cta-section p {
+  color: var(--color-light);
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.cta-section .btn {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-white);
+}
+
+.cta-section .btn:hover {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .home-hero__title {
+    font-size: 3rem;
+  }
+
+  .home-hero__subtitle {
+    font-size: 1.25rem;
+  }
+
+  .about-preview {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .about-preview__image {
+    height: 350px;
+  }
+
+  .features__grid,
+  .gallery-grid,
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+}
